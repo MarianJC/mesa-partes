@@ -1,0 +1,161 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Contenedor principal */
+.admin-container {
+    margin-left: 270px; /* Igual al ancho del sidebar */
+    padding: 40px;
+    width: calc(100% - 270px);
+    box-sizing: border-box;
+    overflow-x: auto;
+}
+
+/* Título */
+.admin-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Botón agregar */
+.btn-agregar {
+    background-color: #77043c;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-agregar:hover {
+    background-color: #a31c5d;
+}
+
+/* Tabla */
+.tabla-personal {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0,0,0,0.08);
+}
+
+.tabla-personal th,
+.tabla-personal td {
+    padding: 12px 16px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+}
+
+.tabla-personal th {
+    background-color: #f7f7f7;
+    color: #444;
+    font-weight: bold;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+/* Iconos de acción */
+.tabla-personal i {
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.tabla-personal i.fa-edit {
+    color: #007bff;
+}
+
+.tabla-personal i.fa-trash-alt {
+    color: red;
+}
+
+/* Botón eliminar (dentro del form) */
+.tabla-personal form {
+    display: inline;
+}
+
+/* Alerta de éxito */
+.alert-exito {
+    background-color: #d4edda;
+    border: 1px solid #28a745;
+    color: #155724;
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Modal eliminar */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-contenido {
+    background-color: #fff;
+    padding: 20px 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+}
+
+.modal-botones {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.modal-botones button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#btn-cancelar {
+    background-color: #6c757d;
+    color: white;
+}
+
+#btn-confirmar {
+    background-color: #dc3545;
+    color: white;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .tabla-personal th, .tabla-personal td {
+        font-size: 12px;
+        padding: 8px 10px;
+    }
+
+    .btn-agregar {
+        font-size: 14px;
+    }
+}

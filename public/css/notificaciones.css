@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main-content {
+    margin-left: 270px; /* ⬅️ igual al ancho del sidebar */
+    padding: 40px;
+    width: calc(100% - 270px);
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+.notificacion-card {
+    background: #f1f5f9;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    border-left: 6px solid #64748b;
+}
+
+.notificacion-card.rechazado { border-color: #dc2626; }
+.notificacion-card.atendido { border-color: #16a34a; }
+.notificacion-card.derivado { border-color: #facc15; }
+
+.fecha {
+    font-size: 14px;
+    color: #475569;
+    margin-bottom: 8px;
+}
+
+.mensaje {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.acciones button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-right: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/*BOTON ELIMINAR*/
+.btn-eliminar {
+    background-color: #dc2626; /* rojo */
+    color: white;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-eliminar:hover {
+    background-color: #b91c1c;
+}
+
+
+/* Botón de marcar como leída */
+.btn-leer {
+    background-color: #10b981;
+    color: white;
+}
+
+.btn-leer:hover {
+    background-color: #059669;
+    transform: scale(1.05);
+}
+
+.acciones a {
+    text-decoration: none;
+}
+
+.acciones a:focus,
+.acciones a:visited,
+.acciones a:hover {
+    outline: none;
+    text-decoration: none;
+}
+
+.icono i {
+    font-size: 17px;
+    vertical-align: middle;
+}
+
+.tipo-rechazado { color: #dc2626; }
+.tipo-atendido  { color: #16a34a; }
+.tipo-derivado  { color: #eab308; }
+.tipo-default   { color: #64748b; }
+

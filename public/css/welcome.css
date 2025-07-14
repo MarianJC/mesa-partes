@@ -1,0 +1,156 @@
+/* Estilo general */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f8fafc;
+    color: #1e293b;
+}
+
+/* Header superior */
+.header-welcome {
+    background-color: #070707;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.header-left img {
+    height: 50px;
+}
+
+.header-left h1 {
+    font-size: 22px;
+    margin: 0;
+}
+
+/* Buscador */
+.header-right .busqueda-codigo {
+    display: flex;
+    gap: 10px;
+}
+
+.busqueda-codigo input {
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: none;
+    font-size: 14px;
+}
+
+.busqueda-codigo button {
+    background-color: #c02e6b;
+    color: #f5f3f1;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.busqueda-codigo button:hover {
+    background-color: #eab308;
+}
+
+/* Contenido principal */
+/*PARA LOS TRES TEXTOS BIENV. INIC SEC. , SOPORT TEC.*/
+.contenido-welcome {
+    padding: 40px;
+    text-align: center;
+}
+
+.contenido-welcome h2 {
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.contenido-welcome h3 {
+    font-size: 20px;
+    margin-top: 40px;
+}
+
+/* Opciones de login */
+.login-opciones {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.login-opciones li {
+    margin: 10px 0;
+}
+
+.login-opciones a {
+    text-decoration: none;
+    background-color: #334155;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.login-opciones a:hover {
+    background-color: #475569;
+}
+
+/* Cuadro de login */
+.login-boxes {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.login-card {
+    background-color: #f1f5f9;
+    padding: 30px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 230px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.login-card:hover {
+    transform: translateY(-5px);
+}
+
+.login-icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.login-card h4 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #1e293b;
+}
+
+.login-card a {
+    text-decoration: none;
+    background-color: #c02e6b;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.login-card a:hover {
+    background-color: #334155;
+}
+
+.login-icon i {
+    font-size: 42px;
+    color: #6b6b63;
+    margin-bottom: 10px;
+}

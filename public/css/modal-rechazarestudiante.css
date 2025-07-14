@@ -1,0 +1,54 @@
+/* Fondo oscuro */
+.modal-rechazo-estudiante {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Caja central */
+.modal-rechazo-estudiante .modal-contenido {
+    background-color: #ffffff;
+    padding: 25px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    width: 90%;
+    text-align: center;
+}
+
+/* Título */
+.modal-rechazo-estudiante h3 {
+    margin-top: 0;
+    color: #dc2626;
+    font-size: 20px;
+}
+
+/* Texto del mensaje */
+.modal-rechazo-estudiante p {
+    margin: 15px 0;
+    color: #1e293b;
+    white-space: pre-wrap;
+    font-size: 15px;
+}
+
+/* Botón cerrar */
+.modal-rechazo-estudiante .btn-cerrar {
+    margin-top: 15px;
+    background-color: #dc2626;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.modal-rechazo-estudiante .btn-cerrar:hover {
+    background-color: #b91c1c;
+}

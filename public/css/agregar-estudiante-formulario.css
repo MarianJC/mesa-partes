@@ -1,0 +1,156 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f9;
+}
+
+/* Estilo general del contenedor del panel */
+.admin-container {
+    margin-left: 270px; /* ⬅️ igual al ancho del sidebar */
+    padding: 40px;
+    width: calc(100% - 270px);
+    box-sizing: border-box;
+    overflow-y: auto;
+    background-color: #f9f9f9;
+}
+
+/* Título del formulario */
+.admin-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Formulario visual */
+.admin-container form {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+}
+
+/* Estilo general de cada grupo de campos */
+.admin-container form .form-group {
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Dos columnas: se agruparán dos .form-group */
+.admin-container form .form-row {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.admin-container form .form-row .form-group {
+    flex: 1;
+    min-width: 250px;
+}
+
+/* Etiquetas */
+.admin-container form label {
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #444;
+}
+
+/* Campos de entrada */
+.admin-container form input[type="text"],
+.admin-container form input[type="email"],
+.admin-container form input[type="password"],
+.admin-container form input[type="date"],
+.admin-container form select {
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: border-color 0.3s;
+    background-color: #fff;
+}
+
+/* Enfoque de campo */
+.admin-container form input:focus,
+.admin-container form select:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+/* Alertas de error */
+.admin-container .alert-errores {
+    background-color: #ffe0e0;
+    border: 1px solid #ff6b6b;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    color: #b10000;
+}
+
+.admin-container .alert-errores ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+/* Botones de acción */
+.admin-container form .form-botones {
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+    margin-top: 2rem;
+}
+
+.admin-container form .btn-guardar,
+.admin-container form .btn-cancelar {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.admin-container form .btn-guardar {
+    background-color: #007BFF;
+    color: #fff;
+}
+
+.admin-container form .btn-cancelar {
+    background-color: #6c757d;
+    color: #fff;
+}
+
+.admin-container form .btn-guardar:hover {
+    background-color: #0056b3;
+}
+
+.admin-container form .btn-cancelar:hover {
+    background-color: #5a6268;
+}
+
+.alert-exito {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    padding: 12px 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .admin-container form .form-row {
+        flex-direction: column;
+    }
+}

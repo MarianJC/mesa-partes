@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main-content {
+    margin-left: 270px; /* ⬅️ igual al ancho del sidebar */
+    padding: 40px;
+    width: calc(100% - 270px);
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+.titulo-seccion {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #1e293b;
+}
+
+.tabla-container {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    overflow-x: auto;
+}
+
+.tabla-tramites {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 15px;
+}
+
+.tabla-tramites th,
+.tabla-tramites td {
+    padding: 14px 16px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+    font-size: 14px;
+    color: #333;
+}
+
+.tabla-tramites th {
+    background-color: #a31c5d;
+    color: white;
+}
+
+.tabla-tramites tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+
+.tabla-tramites a {
+    text-decoration: none;
+    color: #d35190;
+    font-weight: bold;
+}
+
+.tabla-tramites a:hover {
+    text-decoration: underline;
+}
+
+.estado {
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 0.85rem;
+    display: inline-block;
+    text-align: center;
+    min-width: 90px;
+    text-transform: capitalize;
+}
+
+.alert-exito {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    padding: 12px 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+/* Colores según estado */
+.estado.pendiente {
+    background-color: #facc15;
+    color: #000;
+}
+.estado.derivado {
+    background-color: #60a5fa;
+    color: #fff;
+}
+

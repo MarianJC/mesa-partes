@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Contenido principal */
+.main-content {
+    margin-left: 270px; /* ⬅️ igual al ancho del sidebar */
+    padding: 40px;
+    width: calc(100% - 270px);
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+/* Título */
+.titulo-tramites {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #1e293b;
+}
+
+/* Contenedor de la tabla */
+.tabla-container {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    overflow-x: auto;
+}
+
+/* Tabla */
+.tabla-tramites {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 15px;
+}
+
+.tabla-tramites th,
+.tabla-tramites td {
+    border: 1px solid #cbd5e1;
+    padding: 12px;
+    text-align: center;
+}
+
+.tabla-tramites th {
+    background-color: #a31c5d;
+    color: white;
+    font-weight: bold;
+}
+
+.tabla-tramites tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+
+/* Estados */
+.estado {
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 13px;
+    display: inline-block;
+}
+
+.estado.pendiente {
+    background-color: #facc15;
+}
+
+.estado.rechazado {
+    background-color: #dc2626;
+    color: white;
+}
+
+.estado.derivado {
+    background-color: #3b82f6;
+    color: white;
+}
+
+.estado.atendido {
+    background-color: #16a34a;
+    color: white;
+}
+
+.btn-ver-detalles {
+    background-color: #d35190; /* Azul suave */
+    color: white;
+    padding: 6px 12px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 14px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.btn-ver-detalles:hover {
+    background-color: #d8237adc;
+    text-decoration: none;
+}
+
+.btn-detalles {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: #0f4d92;
+    transition: transform 0.2s ease, color 0.3s ease;
+}
+
+.btn-detalles:hover {
+    color: #2563eb;
+    transform: scale(1.2);
+}

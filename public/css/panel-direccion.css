@@ -1,0 +1,109 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.main-content {
+    margin-left: 270px; /* ⬅️ igual al ancho del sidebar */
+    padding: 40px;
+    width: calc(100% - 270px);
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+.titulo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+.tabla-container {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    overflow-x: auto;
+}
+
+.tabla-tramites {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tabla-tramites th,
+.tabla-tramites td {
+    padding: 14px 16px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+    font-size: 14px;
+    color: #333;
+}
+
+.tabla-tramites th {
+    background-color: #a31c5d;
+    font-weight: 600;
+    color: white;
+}
+
+.tabla-tramites tr:hover {
+    background-color: #fafafa;
+}
+
+.estado {
+    padding: 4px 10px;
+    border-radius: 15px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 13px;
+    text-align: center;
+    display: inline-block;
+    min-width: 90px;
+}
+
+.estado.pendiente {
+    background-color: #facc15;
+}
+
+.estado.derivado {
+    background-color: #60a5fa;
+}
+
+.estado.atendido {
+    background-color: #5cb85c;
+}
+
+.estado.rechazado {
+    background-color: #d9534f;
+}
+
+.btn-ver {
+    padding: 6px 12px;
+    background-color: #c74992;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 13px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-ver:hover {
+    background-color: #0056b3;
+}
+
+.alert-exito {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    padding: 12px 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}

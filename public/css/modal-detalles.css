@@ -1,0 +1,66 @@
+.modal-detalle-estudiante {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none; /* Mostrar con JS */
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.modal-contenido {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    width: 500px;
+    max-width: 90%;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.modal-contenido h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #1f2937;
+    font-size: 22px;
+    text-align: center;
+}
+
+.modal-contenido p {
+    margin: 8px 0;
+    font-size: 15px;
+    color: #374151;
+    line-height: 1.5;
+}
+
+.modal-contenido a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.modal-contenido a:hover {
+    text-decoration: underline;
+}
+
+.btn-cerrar {
+    margin-top: 20px;
+    background-color: #dc2626;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-cerrar:hover {
+    background-color: #b91c1c;
+}

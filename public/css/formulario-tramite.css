@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main-content {
+    margin-left: 250px;  /* 👈 mismo ancho que el sidebar */
+    width: calc(100% - 250px);
+    padding: 40px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center; /* 👈 centra horizontalmente */
+    align-items: flex-start;
+}
+
+.formulario-box {
+    background-color: #f1f5f9;
+    max-width: 1000px;       /* 2000px es demasiado en pantallas normales */
+    width: 100%;             /* NECESARIO para que ocupe todo el espacio disponible */
+    margin-top: 40px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+.formulario-box h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.formulario-box label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.formulario-box input[type="text"],
+.formulario-box input[type="email"],
+.formulario-box select,
+.formulario-box input[type="file"],
+.formulario-box textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.btn-enviar {
+    background-color: #1e40af;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.btn-cancelar {
+    background-color: #e11d48;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.btn-enviar:hover {
+    background-color: #1c3aa9;
+}
+
+.btn-cancelar:hover {
+    background-color: #be123c;
+}
+

@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.admin-container {
+    margin-left: 270px; /* ⬅️ igual al ancho del sidebar */
+    padding: 40px;
+    width: calc(100% - 270px);
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+.dashboard-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.card {
+    padding: 1.2rem;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.card p {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+/* Colores por estado */
+.card.resumen { background: #b117767e; }
+.card.pendiente { background: #ffc107; color: #333; }
+.card.atendido { background: #28a745; }
+.card.rechazado { background: #dc3545; }
+.card.derivado { background: #17a2b8; }
+.card.estudiantes { background: #6f42c1; }
+.card.personal { background: #343a40; }
+
+.grafico-tramites {
+    background: #faf8f9;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(46, 44, 44, 0.404);
+    max-width: 900px;         /* 🔹 ancho máximo del contenedor */
+    margin: auto;             /* 🔹 para centrar */
+}
+
+#graficoTramites {
+    height: 300px !important;  /* 🔹 controla el alto */
+    width: 100% !important;    /* 🔹 se adapta al contenedor */
+}
+

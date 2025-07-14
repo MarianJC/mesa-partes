@@ -1,0 +1,128 @@
+body {
+    display: flex;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    background-color: #edf2f7; /* fondo claro */
+    font-family: Arial, sans-serif;
+}
+
+/* Sidebar principal */
+.sidebar-estudiante {
+    width: 270px;
+    background-color: #070707;
+    height: 100vh;
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    position: fixed;       /* 👈 Esto lo hace fijo */
+    top: 0;
+    left: 0;
+    overflow-y: hidden;      /* Por si hay contenido que se desborda */
+    
+}
+
+/* Encabezado con logo e institución */
+.sidebar-estudiante .encabezado {
+    text-align: center;
+}
+
+.sidebar-estudiante .encabezado img {
+    width: 70px;
+    margin-bottom: 10px;
+}
+
+/* Información del usuario */
+.sidebar-estudiante .usuario {
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.sidebar-estudiante .usuario span {
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+.sidebar-estudiante .usuario-info {
+    font-size: 14px;
+}
+
+.icono-usuario {
+    font-size: 1.9rem;      /* Tamaño del ícono */
+    color: #fafdfa;            /* Color base */
+    margin-right: 8px;      /* Espacio a la derecha si va junto al nombre */
+    vertical-align: middle; /* Alineado con texto */
+}
+
+
+
+/* Menú de navegación */
+.sidebar-estudiante nav ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 40px;
+}
+
+.sidebar-estudiante nav ul li {
+    margin: 28px 0;
+}
+
+.sidebar-estudiante nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    display: block;
+    padding: 10px 30px;
+    border-radius: 6px;
+    transition: background 0.2s;
+    
+}
+
+.sidebar-estudiante nav ul li a:hover {
+    background-color: #334155;
+}
+
+/* Resaltar el enlace activo */
+.sidebar-estudiante nav ul li a.activo {
+    background-color: #475569;
+    font-weight: bold;
+}
+
+/* Contador de notificaciones */
+.noti-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.noti-badge {
+    background-color: red;
+    color: white;
+    padding: 2px 8px;
+    border-radius: 50px;
+    font-size: 12px;
+    margin-left: 10px;
+    min-width: 22px;
+    text-align: center;
+}
+
+/* Cierre de sesión */
+.sidebar-estudiante .logout {
+    margin-top: 440px;
+}
+
+.sidebar-estudiante button {
+    background-color: #720e38;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    width: 100%;
+}
+
+.sidebar-estudiante button:hover {
+    background-color: #d13e85;
+}
